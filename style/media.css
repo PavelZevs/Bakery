@@ -1,0 +1,135 @@
+@media (min-width: 2000px) {
+  h2 {
+    font-size: 80px;
+  }
+  .logo a {
+    font-size: 60px;
+  }
+  .nav__link a {
+    font-size: 40px;
+  }
+  .promo__content h1 {
+    font-size: 100px;
+  }
+  .promo__content p {
+    max-width: 900px;
+    font-size: 50px;
+  }
+  .button {
+    width: 400px;
+    padding: 44px 60px;
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .header__top {
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+  .nav ul {
+    flex-direction: column;
+    gap: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #173c35;
+    z-index: 1000;
+    overflow-y: auto;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  .nav__link {
+    display: flex;
+    opacity: 0;
+    visibility: hidden;
+    flex-direction: column;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  }
+  .nav__link li a {
+    color: aquamarine;
+  }
+  .nav__link li a:hover {
+    color: #fff;
+  }
+  .nav__link.show {
+    opacity: 1;
+    visibility: visible;
+  }
+  .nav__link a {
+    display: block;
+  }
+  #burger {
+    display: block;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transition: 0.3s;
+    z-index: 1000;
+    cursor: pointer;
+  }
+  .promo,
+  .footer {
+    background-position: right;
+  }
+}
+
+@media (max-width: 800px) {
+  .main {
+    background-position: right;
+  }
+  .main h1 {
+    font-size: 100px;
+  }
+  .content__delicious {
+    grid-template-columns: repeat(2, 3fr);
+  }
+}
+
+@media (max-width: 500px) {
+  h2 {
+    font-size: 30px;
+  }
+  .content__block img {
+    width: 100%;
+  }
+  .content__delicious {
+    grid-template-columns: repeat(1, 6fr);
+  }
+  .main h1 {
+    font-size: 50px;
+  }
+  .main h3 {
+    font-size: 25px;
+  }
+  .main__content {
+    flex-wrap: wrap;
+  }
+  .contact__block {
+    max-width: 340px;
+    padding: 20px 20px;
+  }
+  .contact__block {
+    max-width: 270px;
+    padding: 20px 20px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .contact__block p {
+    font-family: "Open Sans";
+    line-height: 160%;
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #fff;
+    width: 270px;
+    text-align: center;
+  }
+  [data-tooltip]::after {
+    display: none;
+  }
+  .content__block img {
+    height: 50%;
+  }
+}
